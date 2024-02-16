@@ -67,7 +67,7 @@ class AllWeatherAPiProvider extends ChangeNotifier{
 
   }
   void getWind(dynamic weatherData){
-    double windSpeedInMetersPerSecond = weatherData['wind']['speed'];
+    dynamic windSpeedInMetersPerSecond = weatherData['wind']['speed'];
     // Convert to kilometers per hour (km/h)
     wind = windSpeedInMetersPerSecond * 3.6;
   }
