@@ -7,11 +7,11 @@ class DetailWidgetMain extends StatelessWidget {
   const DetailWidgetMain({
     super.key,
     required this.height, required this.name,
-    required this.color,
+    required this.color, this.child,
   });
 
   final double height;
-
+  final Widget? child;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -39,6 +39,9 @@ class DetailWidgetMain extends StatelessWidget {
               ),
             ),
             const Spacer(),
+            if (child != null) child!,
+
+
           ]
       ),
     );

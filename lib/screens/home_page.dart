@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../Widgets/Icons_Widget/card_icons.dart';
-import '../Widgets/HomePageWidget/homePageFirstCard.dart';
+import '../widgets/home_page_widget/home_pagefirst_card.dart';
+import '../widgets/Icons_widget/card_icons.dart';
+
 class HomePage extends StatefulWidget {
   final dynamic weatherData;
   const HomePage({Key? key, required this.weatherData}) : super(key: key);
@@ -30,11 +31,11 @@ class _HomePageState extends State<HomePage> {
           child:   Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 20.0,left: 10.0,right: 10.0,bottom: 10.0),
+                padding: const EdgeInsets.only(top: 20.0,left: 10.0,right: 10.0,bottom: 10.0),
                 child: FirstContainer(weatherData: widget.weatherData,),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20.0,left: 10.0,right: 10.0,bottom: 10.0),
+                padding: const EdgeInsets.only(top: 20.0,left: 10.0,right: 10.0,bottom: 10.0),
                 child: CardIcon(weatherData: widget.weatherData,),
               )
             ],

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:thermometer/Screens/DetailScreens/sunPage.dart';
+import 'package:thermometer/Screens/intro_page.dart';
 import 'package:thermometer/provider/allweatherapi_provider.dart';
 
-import '../../Widgets/DetailPageWidgets/detail_card_style.dart';
-import '../../Widgets/DetailPageWidgets/location_atfirst_row.dart';
-import '../../Widgets/DetailPageWidgets/maindetail_widget.dart';
+import '../../widgets/detail_pages_widgets/detail_card_style.dart';
+import '../../widgets/detail_pages_widgets/location_atfirst_row.dart';
+import '../../widgets/detail_pages_widgets/maindetail_widget.dart';
 
 class HumidityPage extends StatefulWidget {
   final dynamic weatherData;
@@ -39,7 +41,12 @@ class _CompassPageState extends State<HumidityPage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         children: [
-                          RowgetLocation(value: value,)
+                          RowgetLocation(value: value,),
+                          Expanded(
+                            child: Center(child:
+                            Text('Humidity : ${value.humidity}%',
+                              style: const TextStyle(fontSize: 30),)),
+                          ),
 
                         ],
                       ),

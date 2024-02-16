@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
-import '../../Widgets/DetailPageWidgets/detail_card_style.dart';
-import '../../Widgets/DetailPageWidgets/location_atfirst_row.dart';
-import '../../Widgets/DetailPageWidgets/maindetail_widget.dart';
-import '../../Widgets/sun_page_widget/arrow_widget.dart';
+import '../../widgets/detail_pages_widgets/detail_card_style.dart';
+import '../../widgets/detail_pages_widgets/location_atfirst_row.dart';
+import '../../widgets/detail_pages_widgets/maindetail_widget.dart';
+import '../../widgets/sun_page_widget/arrow_widget.dart';
 import '../../provider/allweatherapi_provider.dart';
 
 class SunPage extends StatefulWidget {

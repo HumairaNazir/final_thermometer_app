@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thermometer/Screens/first_page.dart';
 import 'package:thermometer/provider/allweatherapi_provider.dart';
+import 'package:thermometer/provider/image_provider.dart';
+import 'package:thermometer/provider/weather_forecast_provider.dart';
 import 'package:thermometer/provider/weatherlocation_api.dart';
 
 void main() {
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (context)=>LocationApiProvider()),
-          ChangeNotifierProvider(create: (context)=>AllWeatherAPiProvider())
+          ChangeNotifierProvider(create: (context)=>AllWeatherAPiProvider()),
+          ChangeNotifierProvider(create: (context)=>ImageSelectionModel()),
+          ChangeNotifierProvider(create: (context)=>WeatherForecastProvider())
         ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

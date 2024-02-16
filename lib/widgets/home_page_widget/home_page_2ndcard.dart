@@ -10,6 +10,7 @@ class HomePage2ndCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Consumer<AllWeatherAPiProvider>(
       builder: (BuildContext context, value, Widget? child) {
+        print(value.feelLike);
         return  Padding(
           padding: const EdgeInsets.only(top: 16,left: 9,right: 9,bottom: 2),
           // padding: const EdgeInsets.only(top: 16,left: 9,right: 9,bottom: 2),
@@ -27,31 +28,35 @@ class HomePage2ndCard extends StatelessWidget {
                   IntrinsicHeight(
                     child: Column(
                       children: [
-                        const Text('UV Index',style:   TextStyle(color: Colors.grey,
+                        const Text('Day',style:   TextStyle(color: Colors.grey,
                             fontWeight: FontWeight.bold,fontSize:16 ),),
-                        const Text('???',style:   TextStyle(
-                            fontWeight: FontWeight.bold,fontSize:14 ),),
-                        Image.asset('assets/images/uv.jpg', height: MediaQuery.of(context).size.height *0.03,),
+                          Text(value.dayOfWeek,style:   const TextStyle(
+                            fontWeight: FontWeight.bold,fontSize:13 ),),
+                        Icon(Icons.calendar_month_rounded, size: MediaQuery.of(context).size.height *0.02,color: Colors.teal,),
                       ],
                     ),
                   ),
+                 // SizedBox(width: 1,),
                  IntrinsicHeight(
-                    child:Column(
-                      children: [
-                        const  Text('Feel like',style: TextStyle(color: Colors.grey,
-                            fontWeight: FontWeight.bold,fontSize:16 ),),
-                        Text('${value.feelLike.toInt()}° C\n ${value.tempInFarenheit.toInt()}° F',style:  const    TextStyle(
-                            fontWeight: FontWeight.bold,fontSize:14 ),),
-                      ],
+                    child:Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        children: [
+                          const  Text('Feels like',style: TextStyle(color: Colors.grey,
+                              fontWeight: FontWeight.bold,fontSize:16 ),),
+                          Text('${value.feelLike.toInt()}° C\n ${value.tempInFarenheit.toInt()}° F',style:  const    TextStyle(
+                              fontWeight: FontWeight.bold,fontSize:14 ),),
+                        ],
+                      ),
                     ),),
                   IntrinsicHeight(
                     child: Column(
                       children: [
-                        const Text('Humidity',style:   TextStyle(color: Colors.grey,
+                        const Text('Description',style:   TextStyle(color: Colors.grey,
                             fontWeight: FontWeight.bold,fontSize:16 ),),
-                         Text('${value.humidity}%',style: const  TextStyle(
+                         Text(value.description,style: const  TextStyle(
                             fontWeight: FontWeight.bold,fontSize:14 ),),
-                        Image.asset('assets/images/humidity.jpg', height: MediaQuery.of(context).size.height *0.03,),
+                        Icon(value.weatherIcon, size: MediaQuery.of(context).size.height *0.02,),
                       ],
                     ),
                   ),

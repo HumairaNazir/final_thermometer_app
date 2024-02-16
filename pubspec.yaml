@@ -43,6 +43,15 @@ dependencies:
   geocoding: ^2.1.1
   provider: ^6.1.1
   flutter_compass: ^0.8.0
+  url_launcher: ^6.2.4
+  flutter_rating_bar: ^4.0.1
+  share_plus: ^7.2.1
+  weather_icons: ^3.0.0
+  fluttertoast: ^8.2.4
+  line_chart: ^1.1.11
+  fl_chart: ^0.66.1
+  permission_handler: ^11.3.0
+
 
 dev_dependencies:
   flutter_test:
