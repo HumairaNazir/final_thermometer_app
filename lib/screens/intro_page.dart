@@ -42,7 +42,7 @@ class _IntroPageState extends State<IntroPage> {
            CardWidget(heading: 'Indoor/Outdoor\n Temperature',
            subHeading: 'Check temperature by Smart Thermometer',
            callback:(){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>IntroSecond()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>IntroSecond()));
            })
        ],
      ),

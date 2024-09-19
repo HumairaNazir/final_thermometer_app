@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (context)=>LocationApiProvider()),
-          ChangeNotifierProvider(create: (context)=>AllWeatherAPiProvider()),
-          ChangeNotifierProvider(create: (context)=>ImageSelectionModel()),
-          ChangeNotifierProvider(create: (context)=>WeatherForecastProvider())
-        ],
+      providers: [
+        ChangeNotifierProvider(create: (context) => LocationApiProvider()),
+        ChangeNotifierProvider(create: (context) => AllWeatherAPiProvider()),
+        ChangeNotifierProvider(create: (context) => ImageSelectionModel()),
+        ChangeNotifierProvider(create: (context) => WeatherForecastProvider())
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
@@ -35,5 +35,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
