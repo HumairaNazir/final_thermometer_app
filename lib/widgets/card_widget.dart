@@ -4,14 +4,14 @@ class CardWidget extends StatelessWidget {
   final String heading;
   final String subHeading;
   final VoidCallback callback;
-  final bool loading; // Add this parameter
+  final bool loading;
 
   const CardWidget({
     super.key,
     required this.heading,
     required this.subHeading,
     required this.callback,
-    this.loading = false, // Initialize this parameter
+    this.loading = false,
   });
 
   @override
