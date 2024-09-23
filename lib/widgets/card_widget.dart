@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
@@ -48,7 +49,7 @@ class CardWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
               child: InkWell(
-                onTap: loading ? null : callback, // Disable callback if loading
+                onTap: loading ? null : callback,
                 child: Container(
                   height: MediaQuery.of(context).size.height * 0.07,
                   width: double.infinity,
@@ -63,7 +64,7 @@ class CardWidget extends StatelessWidget {
                   ),
                   child: Center(
                     child: loading
-                        ? const CircularProgressIndicator(
+                        ? const CupertinoActivityIndicator(
                             color: Colors.white,
                           ) // Show progress indicator if loading
                         : const Text(

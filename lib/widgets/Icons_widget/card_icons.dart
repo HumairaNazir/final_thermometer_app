@@ -35,10 +35,11 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    WeatherForecastPage(
-                                        name: 'Weather Forecast',
-                                        color: Colors.purple, weatherData: weatherData,)));
+                                builder: (context) => WeatherForecastPage(
+                                      name: 'Weather Forecast',
+                                      color: Colors.purple,
+                                      weatherData: weatherData,
+                                    )));
                       },
                     ),
                     const SizedBox(
@@ -52,8 +53,11 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>   SunPage(
-                                    name: 'SunTime', color: Colors.orange, weatherData: weatherData,)));
+                                builder: (context) => SunPage(
+                                      name: 'SunTime',
+                                      color: Colors.orange,
+                                      weatherData: weatherData,
+                                    )));
                       },
                     ),
                   ],
@@ -69,10 +73,11 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    HumidityPage(
-                                        name: 'Humidity',
-                                        color: Colors.blueAccent, weatherData: weatherData,)));
+                                builder: (context) => HumidityPage(
+                                      name: 'Humidity',
+                                      color: Colors.blueAccent,
+                                      weatherData: weatherData,
+                                    )));
                       },
                     ),
                     const SizedBox(
@@ -86,9 +91,11 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>   VisibilityPage(
-                                    name: 'Visibility',
-                                    color: Colors.purple, weatherData:weatherData,)));
+                                builder: (context) => VisibilityPage(
+                                      name: 'Visibility',
+                                      color: Colors.purple,
+                                      weatherData: weatherData,
+                                    )));
                       },
                     )
                   ],
@@ -104,8 +111,11 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>  CompassPage(
-                                    name: 'Compass', color: Colors.red, weatherData: weatherData,)));
+                                builder: (context) => CompassPage(
+                                      name: 'Compass',
+                                      color: Colors.red,
+                                      weatherData: weatherData,
+                                    )));
                       },
                     ),
                     const SizedBox(
@@ -119,9 +129,10 @@ class CardIcon extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>  WindPage(
+                                builder: (context) => WindPage(
                                       name: 'Wind',
-                                      color: Colors.blue, weahtherData: weatherData,
+                                      color: Colors.blue,
+                                      weahtherData: weatherData,
                                     )));
                       },
                     )
