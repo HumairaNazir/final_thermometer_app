@@ -1,16 +1,26 @@
 # thermometer
 
-"A new Flutter project."
+# 🗞️ News App
 
-## Getting Started
+A Flutter News Application that shows trending news headlines from multiple sources.
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
+✅ Get real-time weather updates for any city
+✅ 7-day forecast with temperature, humidity, and conditions
+✅ Displays weather icons for clear, rainy, cloudy, etc.
+✅ Responsive and clean UI built with Flutter
+✅ Powered by OpenWeatherMap API
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Download
+[Click here to download the APK](https://drive.google.com/uc?export=download&id=1mr6onO3sxEHuV5zto_Ykw_J9cp-wYX1S)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+- Flutter & Dart
+- OpenWeather api
+- http package
+- Provider (State Management)
+- REST API Integration
+- Flutter & Dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
+
