@@ -12,7 +12,7 @@ A Flutter News Application that shows trending news headlines from multiple sour
 ✅ Powered by OpenWeatherMap API
 
 ## 📱 Download
-[Click here to download the APK](https://drive.google.com/uc?export=download&id=1mr6onO3sxEHuV5zto_Ykw_J9cp-wYX1S)
+[Click here to download the APK](https://drive.google.com/file/d/1mr6onO3sxEHuV5zto_Ykw_J9cp-wYX1S/view?usp=sharing)
 
 ## 🛠️ Tech Stack
 - Flutter & Dart
